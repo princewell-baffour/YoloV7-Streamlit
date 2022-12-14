@@ -24,5 +24,7 @@ thop
 # Extras -----------
 ipython  # interactive notebook
 streamlit
+st_btn_select
+streamlit_option_menu
 psutil
 wget
