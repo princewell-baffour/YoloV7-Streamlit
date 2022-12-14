@@ -1,8 +1,8 @@
 import streamlit as st
 import cv2
 import torch
-from v7utils.hubconf import custom
-from v7utils.plots import plot_one_box
+from utils.hubconf import custom
+from utils.plots import plot_one_box
 import numpy as np
 import tempfile
 from PIL import ImageColor
@@ -23,7 +23,7 @@ def yolov7():
     st.title('Options') 
     
     # path to model 
-    path_model_file = "yolov7best.pt"
+    path_model_file = "models/yolov7best.pt" 
 
 
     source = ("Image Detection",  
@@ -301,5 +301,3 @@ def yolov7():
     else:
         WebCam()
 
-if __name__=='__main__':
-    yolov7()
