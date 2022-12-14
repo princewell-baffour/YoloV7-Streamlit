@@ -1,8 +1,8 @@
 import streamlit as st
 import cv2
 import torch
-from utils.hubconf import custom
-from utils.plots import plot_one_box
+from v7utils.hubconf import custom
+from v7utils.plots import plot_one_box
 import numpy as np
 import tempfile
 from PIL import ImageColor
@@ -18,18 +18,15 @@ import os
 
 def yolov7():
 
+    st.header('AI Project - Object Detection') 
+    st.subheader('YOLOv7 Model Trained on our Custom Dataset')
+    st.title('Options') 
     
-    count = 0
-    # sample_img = cv2.imread('logo.jpg')
-    # FRAME_WINDOW = st.image(sample_img, channels='BGR')
-    st.title('YOLOv7 Predictions')
+    # path to model 
+    path_model_file = "yolov7best.pt"
 
 
-    # path to model
-    path_model_file = "models/yolov7best.pt"
-
-
-    source = ("Image Detection", 
+    source = ("Image Detection",  
     #"Video Detection",
     "WebCam")
     options = st.selectbox("Select input", range(
@@ -42,7 +39,7 @@ def yolov7():
    # Draw thickness
     draw_thick = st.slider(
         'Draw Thickness:', min_value=1,
-        max_value=20, value=15
+        max_value=20, value=5
     )
 
     # read class.txt
@@ -294,6 +291,8 @@ def yolov7():
                         with js3:
                             st.markdown("<h4>GPU Memory Usage</h4>", unsafe_allow_html=True)  
                             js3_text = st.markdown('<h5>NA</h5>', unsafe_allow_html=True)
+
+    
 
     if options == 0:    
         ImageInput()
