@@ -18,10 +18,12 @@ import os
 
 def yolov7():
 
-    st.header('AI Project - Object Detection') 
-    st.subheader('YOLOv7 Model Trained on our Custom Dataset')
-    st.title('Options') 
-    
+    #st.header('AI Project - Object Detection')
+    #st.subheader('YOLOv7 Model Trained on our Custom Dataset')
+    #st.title('Options') 
+    st.header('Project 4.0  - Yolov7 Model')
+    st.subheader('YOLOv8 Model Trained on Custom Dataset(Strawberry)')
+    st.write(" Made with ❤ by Princewell")
     # path to model 
     path_model_file = "models/yolov7best.pt" 
 
