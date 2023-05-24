@@ -26,8 +26,8 @@ def nav():
 
     st.sidebar.subheader('Objects Detectable')
     st.sidebar.write("Strawberry flowers")
-   """ st.sidebar.write("Unripe strawberry")
-    st.sidebar.write("Duck")
-    st.sidebar.write("Chicken")
-    st.sidebar.write("Grapes")
-    st.sidebar.write("Watermelon")"""
+    #st.sidebar.write("Unripe strawberry")
+    #st.sidebar.write("Duck")
+    #st.sidebar.write("Chicken")
+    #st.sidebar.write("Grapes")
+    #st.sidebar.write("Watermelon")
